@@ -1,0 +1,19 @@
+// BODY MASS INDEX CALCULATOR
+// BMI FORMULA : Weight(in kg) / Height(in m)^2 
+
+Height=float(input("Enter your height in centimeters: "))
+Weight=float(input("Enter your Weight in Kg: "))
+Height = Height/100
+BMI=Weight/(Height*Height)
+print("your Body Mass Index is: ",BMI)
+if(BMI>0):
+	if(BMI<=16):
+		print("You are severely UNDER-WEIGHT")
+	elif(BMI<=18.5):
+		print("you are UNDER-WEIGHT")
+	elif(BMI<=25):
+		print("You are HEALTHY")
+	elif(BMI<=30):
+		print("You are OVER-WEIGHT")
+	else: print("You are severely OVER-WEIGHT")
+else:("Enter Valid Details")
